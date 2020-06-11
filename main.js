@@ -9,6 +9,7 @@ class Index extends React.Component {
         <ul>
           <li><Link to='/ghtest/about'>About</Link></li>
           <li><Link to='/ghtest/article'>Article</Link></li>
+      <li><Link to='/ghtest/foo/barr'>deeeep</Link></li>
         </ul>
         {this.props.children}
       </div>
@@ -32,11 +33,20 @@ class Article extends React.Component {
   }
 }
 
+class Deep extends React.Component {
+  render() {
+    return (
+      <div>Deep</div>
+    );
+  }
+}
+
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path='/ghtest' component={Index}>
       <Route path='about' component={About}/>
       <Route path='article' component={Article}/>
+  <Route path='foo/barr' component={Deep}/>
     </Route>
   </Router>
   ), document.getElementById('content')
