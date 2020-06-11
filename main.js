@@ -7,8 +7,8 @@ class Index extends React.Component {
       <div>
         <h1>Hello React!</h1>
         <ul>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='/article'>Article</Link></li>
+          <li><Link to='/ghtest/about'>About</Link></li>
+          <li><Link to='/ghtest/article'>Article</Link></li>
         </ul>
         {this.props.children}
       </div>
