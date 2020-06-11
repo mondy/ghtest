@@ -34,7 +34,7 @@ class Article extends React.Component {
 
 ReactDOM.render((
   <Router history={browserHistory}>
-    <Route path='/' component={Index}>
+    <Route path='/ghtest' component={Index}>
       <Route path='about' component={About}/>
       <Route path='article' component={Article}/>
     </Route>
